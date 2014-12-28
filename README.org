@@ -1,0 +1,27 @@
+#+TITLE:	README for typewriter-mode
+#+AUTHOR:	Kyle Feng
+#+EMAIL:	kylefeng28@gmail.com
+
+Minor mode for experiencing all the joys of a typewriter.
+Forked from Peter Vasil's typewriter-mode
+<https://github.com/ptrv/emacs.d/blob/master/site-lisp/misc/typewriter-mode.el>
+Inspired by Bob Newell's writer-mode <http://www.bobnewell.net/writer-typewriter.el>
+
+* Why typewriters?
+Typewriters are awesome. Take it from this guy:
+
+#+BEGIN_QUOTE
+``Writing on a manual [typewriter] makes you slower in a good way, I think. You don't revise as much, you just think more, because you know you're going to have to retype the entire (flipping) thing. Which is a big stop on just slapping anything down and playing with it." -- Will Self
+#+END_QUOTE
+
+I made this because I have always wanted a typewriter, but I couldn't ever get a real one. This is also for those who wish to relive the days of the noisy typewriter, or to experience a taste of it for the first time, on a computer screen. I myself fall in the latter category. (I do suppose, however, that most people using Emacs are old enough to have experienced typewriters. I might be one of the few millenials using good ol' Emacs).
+
+* Features:
+- Typewriter sounds
+- Typewriter-style editing
+  - Buffer scrolls to simulate carriage movement
+  - Restricts editing to append-only and overstrike (slightly buggy, but can be disabled)
+- Evil integration
+
+=require 'typewriter=
+M-x =typewriter-mode=
