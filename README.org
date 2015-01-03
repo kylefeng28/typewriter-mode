@@ -15,12 +15,16 @@ Typewriters are awesome. Take it from this guy:
 
 I made this because I have always wanted a typewriter, but I couldn't ever get a real one. This is also for those who wish to relive the days of the noisy typewriter, or to experience a taste of it for the first time, on a computer screen. I myself fall in the latter category (I do suppose, however, that most people using Emacs are old enough to have experienced typewriters. I might be one of the few late millennials using good ol' Emacs).
 
-* Features:
+* Features
 - Typewriter sounds
 - Typewriter-style editing
   - Buffer scrolls to simulate carriage movement
   - Restricts editing to append-only and overstrike (slightly buggy, but can be disabled)
-- Evil integration
+- Evil integration (uncomment code to enable)
 
 =(require 'typewriter)= \\
 M-x =typewriter-mode=
+
+* Keybindings
+- =C-x t= typewriter-mode
+

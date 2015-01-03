@@ -59,20 +59,22 @@
     (typewriter-mode-off)))
 
 ;; Evil state
-(evil-define-state typewriter
-  "Typewriter state."
-  :tag " <T> "
-  :message "-- TYPEWRITER --"
-  :enable (insert)
-  :cursor (box)
-  (if (evil-typewriter-state-p)
-      (typewriter-mode t)
-    (typewriter-mode 0)))
+;(evil-define-state typewriter
+;  "Typewriter state."
+;  :tag " <T> "
+;  :message "-- TYPEWRITER --"
+;  :enable (insert)
+;  :cursor (box)
+;  (if (evil-typewriter-state-p)
+;      (typewriter-mode t)
+;    (typewriter-mode 0)))
+;
+;(define-key evil-typewriter-state-map (kbd "DEL") 'typewriter-delete-interactive)
+;
+;;; Keybindings
+;(evil-leader/set-key "tt" 'evil-typewriter-state)
 
-(define-key evil-typewriter-state-map (kbd "DEL") 'typewriter-delete-interactive)
-
-;; Keybindings
-(evil-leader/set-key "tt" 'evil-typewriter-state)
+(global-set-key (kbd "C-x t") 'typewriter-mode)
 
 (provide 'typewriter)
 ;;; typewriter.el ends here
